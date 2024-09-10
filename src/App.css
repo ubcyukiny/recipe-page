@@ -1,42 +1,172 @@
+@font-face {
+  font-family: "Outfit";
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "YoungSerif";
+  src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+:root {
+  --rose800: #7a284e;
+  --rose50: #fff7fb;
+  --stone900: #312e2c;
+  --stone600: #5f564d;
+  --stone150: #e3ddd7;
+  --stone100: #f3e5d7;
+  --brown800: #854632;
+  --white: #ffffff;
+
+  --spacing1600: 128px;
+  --spacing600: 48px;
+  --spacing500: 40px;
+  --spacing400: 32px;
+  --spacing300: 24px;
+  --spacing200: 16px;
+  --spacing150: 12px;
+  --spacing100: 8px;
+}
+
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main {
+  background-color: var(--stone100);
+  gap: var(--spacing100);
+  padding-left: var(--spacing600);
+  padding-right: var(--spacing600);
+  padding-top: var(--spacing1600);
+  padding-bottom: var(--spacing1600);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+article {
+  background-color: var(--white);
+  border-radius: var(--spacing300);
+  width: 656px;
+  height: 1620px;
+  padding: var(--spacing500);
+  gap: var(--spacing500);
+  letter-spacing: 0px;
+
+  /* text-preset 4 */
+  color: var(--stone600);
+  font-family: "Outfit";
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+
+  display: flex;
+  flex-direction: column;
 }
 
-.card {
-  padding: 2em;
+img {
+  width: 656px;
+  height: 300px;
+  border-radius: 12px;
 }
 
-.read-the-docs {
-  color: #888;
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing400);
 }
+
+.title {
+  gap: var(--spacing300);
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: var(--stone900);
+  font-size: 40px;
+  font-family: "YoungSerif";
+  line-height: 1;
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  color: var(--brown800);
+  font-size: 28px;
+  font-family: "YoungSerif";
+  line-height: 1;
+  font-weight: 400;
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.preparation {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--rose50);
+  color: var(--rose800);
+  gap: var(--spacing200);
+  padding: var(--spacing300);
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.preparation h2 {
+  font-size: 20px;
+  line-height: 1;
+  font-family: "Outfit";
+  font-weight: 600;
+  margin: 0;
+}
+
+.preparation li::before {
+  color: var(--rose800);
+}
+
+.ingredients, .instructions, .nutrition {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing300);
+}
+
+ul, ol {
+  margin: 0;
+  padding-left: var(--spacing300);
+
+}
+
+ol li::marker {
+  color: var(--brown800);
+  font-family: 'Outfit';
+  font-size: 16px;
+  font-weight: 700;
+  font-variant-numeric: normal;
+}
+
+li {
+  padding-left: var(--spacing200); 
+  color: var(--stone600);
+  margin-top: var(--spacing100);
+}
+
+li:first-child {
+  margin-top: 0;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+}
+
+
+hr {
+  border-top: 1px solid var(--stone150);
+  margin: 0;
+}
+
