@@ -16,19 +16,14 @@ const RecipeCard = () => {
             <h2>Preparation time</h2>
             <ul>
               <li>
-                <div className="listItem">
-                  <h3>Total</h3>: Approximately 10 minutes
-                </div>
+                <span className="itemTitle">Total</span>: Approximately 10
+                minutes
               </li>
               <li>
-                <div className="listItem">
-                  <h3>Preparation</h3>: 5 minutes
-                </div>
+                <span className="itemTitle">Preparation</span>: 5 minutes
               </li>
               <li>
-                <div className="listItem">
-                  <h3>Cooking</h3>: 5 minutes
-                </div>
+                <span className="itemTitle">Cooking</span>: 5 minutes
               </li>
             </ul>
           </section>
@@ -49,44 +44,35 @@ const RecipeCard = () => {
             <h2>Instructions</h2>
             <ol>
               <li>
-                <div className="listItem">
-                  <h3>Beat the eggs</h3>: In a bowl, beat the eggs with a pinch
-                  of salt and pepper until they are well mixed. You can add a
-                  tablespoon of water or milk for a fluffier texture.
-                </div>
+                <span className="itemTitle">Beat the eggs</span>: In a bowl,
+                beat the eggs with a pinch of salt and pepper until they are
+                well mixed. You can add a tablespoon of water or milk for a
+                fluffier texture.
               </li>
               <li>
-                <div className="listItem">
-                  <h3>Heat the pan</h3>: Place a non-stick frying pan over
-                  medium heat and add butter or oil.
-                </div>
+                <span className="itemTitle">Heat the pan</span>: Place a
+                non-stick frying pan over medium heat and add butter or oil.
               </li>
               <li>
-                <div className="listItem">
-                  <h3>Cook the omelette</h3>: Once the butter is melted and
-                  bubbling, pour in the eggs. Tilt the pan to ensure the eggs
-                  evenly coat the surface.
-                </div>
+                <span className="itemTitle">Cook the omelette</span>: Once the
+                butter is melted and bubbling, pour in the eggs. Tilt the pan to
+                ensure the eggs evenly coat the surface.
               </li>
               <li>
-                <div className="listItem">
-                  <h3>Add fillings (optional)</h3>: When the eggs begin to set
-                  at the edges but are still slightly runny in the middle,
-                  sprinkle your chosen fillings over one half of the omelette.
-                </div>
+                <span className="itemTitle">Add fillings (optional)</span>: When
+                the eggs begin to set at the edges but are still slightly runny
+                in the middle, sprinkle your chosen fillings over one half of
+                the omelette.
               </li>
               <li>
-                <div className="listItem">
-                  <h3>Fold and serve</h3>: As the omelette continues to cook,
-                  carefully lift one edge and fold it over the fillings. Let it
-                  cook for another minute, then slide it onto a plate.
-                </div>
+                <span className="itemTitle">Fold and serve</span>: As the
+                omelette continues to cook, carefully lift one edge and fold it
+                over the fillings. Let it cook for another minute, then slide it
+                onto a plate.
               </li>
               <li>
-                <div className="listItem">
-                  <h3>Enjoy</h3>: Serve hot, with additional salt and pepper if
-                  needed.
-                </div>
+                <span className="itemTitle">Enjoy</span>: Serve hot, with
+                additional salt and pepper if needed.
               </li>
             </ol>
           </section>
@@ -98,19 +84,42 @@ const RecipeCard = () => {
             <table>
               <tr>
                 <td>Calories</td>
-                <td>227kcal</td>
+                <td>
+                  <span className="nutritionInfo">227kcal</span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <hr class="spaced-hr" />
+                </td>
               </tr>
               <tr>
                 <td>Carbs</td>
-                <td>0g</td>
+                <td>
+                  <span className="nutritionInfo">0g</span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <hr class="spaced-hr" />
+                </td>
               </tr>
               <tr>
                 <td>Protein</td>
-                <td>20g</td>
+                <td>
+                  <span className="nutritionInfo">20g</span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <hr class="spaced-hr" />
+                </td>
               </tr>
               <tr>
                 <td>Fat</td>
-                <td>22g</td>
+                <td>
+                  <span className="nutritionInfo">22g</span>
+                </td>
               </tr>
             </table>
           </section>

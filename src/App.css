@@ -100,8 +100,7 @@ h2 {
   margin: 0;
 }
 
-h3 {
-  margin: 0;
+.itemTitle {
   font-weight: 700;
   font-size: 16px;
 }
@@ -125,10 +124,6 @@ h3 {
   margin: 0;
 }
 
-.preparation li::before {
-  color: var(--rose800);
-}
-
 .ingredients, .instructions, .nutrition {
   display: flex;
   flex-direction: column;
@@ -141,7 +136,7 @@ ul, ol {
 
 }
 
-ol li::marker {
+ol li::marker, .nutritionInfo {
   color: var(--brown800);
   font-family: 'Outfit';
   font-size: 16px;
@@ -159,14 +154,19 @@ li:first-child {
   margin-top: 0;
 }
 
-.listItem {
-  display: flex;
-  align-items: center;
-}
-
-
 hr {
   border-top: 1px solid var(--stone150);
   margin: 0;
 }
 
+table {
+  height: 168px;
+}
+
+td {
+  padding: 0;
+}
+
+.spaced-hr {
+  margin: var(--spacing150) 0;
+}
