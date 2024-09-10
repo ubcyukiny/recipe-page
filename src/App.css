@@ -29,26 +29,27 @@
 }
 
 #root {
-  margin: 0 auto;
+  margin: 0;
+  background-color: var(--stone100);
+  width: 100%;
+  height: 100%;
 }
 
 main {
-  background-color: var(--stone100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: var(--spacing100);
   padding-left: var(--spacing600);
   padding-right: var(--spacing600);
   padding-top: var(--spacing1600);
   padding-bottom: var(--spacing1600);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 article {
   background-color: var(--white);
   border-radius: var(--spacing300);
   width: 656px;
-  height: 1620px;
   padding: var(--spacing500);
   gap: var(--spacing500);
   letter-spacing: 0px;
@@ -124,28 +125,31 @@ h2 {
   margin: 0;
 }
 
-.ingredients, .instructions, .nutrition {
+.ingredients,
+.instructions,
+.nutrition {
   display: flex;
   flex-direction: column;
   gap: var(--spacing300);
 }
 
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding-left: var(--spacing300);
-
 }
 
-ol li::marker, .nutritionInfo {
+ol li::marker,
+.nutritionInfo {
   color: var(--brown800);
-  font-family: 'Outfit';
+  font-family: "Outfit";
   font-size: 16px;
   font-weight: 700;
   font-variant-numeric: normal;
 }
 
 li {
-  padding-left: var(--spacing200); 
+  padding-left: var(--spacing200);
   color: var(--stone600);
   margin-top: var(--spacing100);
 }
@@ -160,7 +164,7 @@ hr {
 }
 
 table {
-  height: 168px;
+  border-spacing: 0;
 }
 
 td {
@@ -168,5 +172,53 @@ td {
 }
 
 .spaced-hr {
-  margin: var(--spacing150) 0;
+  margin-top: calc(var(--spacing150) - 1px);
+  margin-bottom: calc(var(--spacing150) - 1px);
+}
+
+/* tablet */
+@media only screen and (max-width: 768px) {
+  article {
+    max-width: 536px;
+    height: 1764px;
+  }
+
+  img {
+    width: 536px;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 620px) {
+  main {
+    padding: 0;
+    margin: 0;
+  }
+
+  #root {
+    padding:0;
+  }
+
+  article {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 0;
+    gap: 0;
+    padding: 0;
+  }
+
+  img {
+    width: 100%;
+    height: 171px;
+    border-radius: 0;
+  }
+
+  .textContent {
+    gap: var(--spacing400);
+    padding: var(--spacing500) var(--spacing400);
+  }
+
+  h1 {
+    font-size: 36px;
+  }
 }
