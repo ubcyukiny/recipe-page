@@ -170,6 +170,7 @@ table {
 
 td {
   padding: 0;
+  width: 288px;
 }
 
 /* spacing on nutrition entry, not line dividers */
